@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    width: 100%;
+    max-width: 1100px;
+    height: inherit;
+    border-bottom: 0;
+    margin: 0 auto;
+}
+
+/* navigation bar - login */
+
+.nav1{
+    height: 40px;
+    background-color: #003875;
+    color: white;
+    display: block;
+    border-bottom: 0;
+}
+
+.nav1 .container{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.container::after{
+    content:"";
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+}
+
+ul.nav-lang > li{
+    background-color: #001a38;
+    border-color: #001a38;
+    border: 0;
+    color:white;
+    border-radius: 2px;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.nav-lang {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 6px 0 6px 4px;
+    line-height: 1.5;
+}
+
+ul.nav-loginbtn > li {
+    background-color: #3076d6;
+    border-color: #3076d6;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.nav-loginbtn {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin: 6px 4px 6px 4px;
+    line-height: 1.5;
+}
+
+/* navigation bar */
+
+.nav2 {
+    height: 90px;
+    width: 100%;
+    background-color: #001a38;
+    color: white;
+    display: block;
+    border-bottom: 0;
+    padding: 0;
+    line-height: 85px;
+}
+
+.nav2 .container{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nav-container::after{
+    content:"";
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    font: 30px;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.nav-menu{
+    margin-left: auto;
+    width: 77.5%;
+    padding: 0;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn{
+    list-style-type: none;
+    align-items: flex-end;
+    margin: 0;
+    justify-content: space-between;
+}
+
+ul.nav-btn > li {
+    float: left;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* header */
+
+.hd {
+    height: 620px;
+}
+
+.hd .container{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-image: url(./배너작업_데이터_01_1920.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+header::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+
+/* section1 */
+
+.section1 {
+    font-size: 1rem;
+    display: block;
+    padding: 22px 0;
+    margin-top: 0;
+    box-sizing: border-box;
+    display: block;
+}
+.section1 .container {
+    width: 1100px;
+    height: 119.98px;
+    border-radius: 3px;
+    background-color: #f3ca3e;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 35px;
+}
+
+.search-box .search .search-btn .search-more {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.search-box >.search {
+    box-sizing: border-box;
+    display: inline;
+    flex: 1 1 auto;
+    width: 700px;
+    height: 49.98px;
+    border-radius: 3px;
+    border-style: none;
+    color: black;
+    background-color: white;
+    margin: 0 2px 0 35px;
+}
+
+.search::placeholder {
+    color: #ced4da
+}
+
+.search-box > .search-btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 8rem;
+    height: 49.98px;
+    line-height: 49.98px;
+    background-color: #3e3e40;
+    border: 0;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    margin-top:;
+}
+
+.search-box > .search-more {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 8rem;
+    height: 49.98px;
+    line-height: 49.98px;
+    background-color: #f3ca3e;
+    border-color: #3e3e40;
+
+    color: #3e3e40;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    font-weight: 700;
+}
